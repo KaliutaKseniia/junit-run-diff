@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="shipping" tests="6" failures="2" errors="0" skipped="1">
+    <testcase classname="shipping.TestQuote" name="test_domestic" />
+    <testcase classname="shipping.TestQuote" name="test_remote_area">
+      <failure message="Unexpected surcharge" />
+    </testcase>
+    <testcase classname="shipping.TestQuote" name="test_pickup" />
+    <testcase classname="shipping.TestQuote" name="test_postcode" />
+    <testcase classname="shipping.TestQuote" name="test_legacy_rate">
+      <skipped message="Retired rate table" />
+    </testcase>
+    <testcase classname="shipping.TestQuote" name="test_oversize">
+      <failure message="Unexpected weight allowance" />
+    </testcase>
+  </testsuite>
+</testsuites>
