@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="shipping" tests="6" failures="2" errors="1" skipped="1">
+    <testcase classname="shipping.TestQuote" name="test_domestic" />
+    <testcase classname="shipping.TestQuote" name="test_remote_area" />
+    <testcase classname="shipping.TestQuote" name="test_pickup">
+      <failure message="Pickup should be free" />
+    </testcase>
+    <testcase classname="shipping.TestQuote" name="test_postcode">
+      <skipped message="Postcode data unavailable" />
+    </testcase>
+    <testcase classname="shipping.TestQuote" name="test_priority">
+      <error message="Rate table unavailable" />
+    </testcase>
+    <testcase classname="shipping.TestQuote" name="test_oversize">
+      <failure message="Unexpected weight allowance" />
+    </testcase>
+  </testsuite>
+</testsuites>
